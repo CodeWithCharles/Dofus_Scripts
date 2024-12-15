@@ -40,7 +40,7 @@ try:
             if current_color != stored_color:
                 print(f"Color change detected at ({x}, {y}): {current_color} != {stored_color}")
                 ptg.click(x, y)
-            time.sleep(rand.uniform(0.1, 0.5))
+            time.sleep(rand.uniform(0.05, 0.3))
 
 except KeyboardInterrupt:
     print("Monitoring stopped.")
